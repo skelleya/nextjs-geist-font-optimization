@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/index.css" />
+</head>
+<body class="min-h-screen bg-black text-white flex flex-col">
+  <main id="content" class="flex-grow p-6">
+    <section id="home" class="tab-content">
+      <div class="flex flex-col items-center space-y-6">
+        <button class="w-full max-w-xs py-3 bg-white text-black rounded-md font-semibold">
+          Scan AQ Number
+        </button>
+        <button class="w-full max-w-xs py-3 bg-white text-black rounded-md font-semibold">
+          Scan IMO Number
+        </button>
+      </div>
+    </section>
+    <section id="history" class="tab-content hidden text-center text-gray-400">
+      History of scans will appear here.
+    </section>
+    <section id="settings" class="tab-content hidden flex flex-col items-center space-y-6">
+      <button class="w-full max-w-xs py-3 bg-white text-black rounded-md font-semibold">
+        Sign Out
+      </button>
+      <button class="w-full max-w-xs py-3 bg-white text-black rounded-md font-semibold">
+        Back
+      </button>
+    </section>
+  </main>
+  <nav class="bg-gray-900 border-t border-gray-700 flex justify-around py-3" role="tablist" aria-label="Main navigation">
+    <button role="tab" aria-selected="true" aria-controls="home" id="tab-home" class="text-sm font-semibold text-white" data-tab="home">Home</button>
+    <button role="tab" aria-selected="false" aria-controls="history" id="tab-history" class="text-sm font-semibold text-gray-500" data-tab="history">History</button>
+    <button role="tab" aria-selected="false" aria-controls="settings" id="tab-settings" class="text-sm font-semibold text-gray-500" data-tab="settings">Settings</button>
+  </nav>
+  <script src="./src/app.js"></script>
+</body>
+</html>
