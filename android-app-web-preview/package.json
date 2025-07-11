@@ -1,0 +1,15 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve -s .",
+    "start": "serve -s ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^4.1.6",
+    "postcss": "^8.5.3",
+    "autoprefixer": "^10.4.21"
+  }
+}
